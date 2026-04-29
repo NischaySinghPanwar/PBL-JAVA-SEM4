@@ -9,12 +9,12 @@ import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
-import java.sql.*;
 import javax.swing.*;
 
 public class Server extends JFrame {
@@ -52,6 +52,17 @@ public class Server extends JFrame {
         return label;
     }
 
+private void nischay()
+    {
+        if (7 % 2 == 0) 
+        {
+            System.out.println("Even");
+        }
+        else 
+        {
+            System.out.println("Odd");
+        }
+    }
     Server() {
         setLayout(null);
         setTitle("Server Chat");
@@ -140,7 +151,18 @@ public class Server extends JFrame {
         startServer(status);
         startDiscoveryService();
     }
-
+private boolean anshul()
+    {
+        int a=10;
+        if(a==10)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     private void startDiscoveryService() {
         Thread discoveryThread = new Thread(() -> {
             try {
@@ -178,7 +200,15 @@ public class Server extends JFrame {
         discoveryThread.setDaemon(true);
         discoveryThread.start();
     }
-
+private int aviral()
+    {
+        int sum=0;
+        for(int i=0; i<10; i++)
+            {
+                sum=+i;
+            }
+        return sum;
+    }
     private void startServer(JLabel statusLabel) {
         Thread serverThread = new Thread(() -> {
             try {

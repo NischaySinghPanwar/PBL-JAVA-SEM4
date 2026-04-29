@@ -12,6 +12,7 @@ import java.net.NetworkInterface;
 import java.net.Socket;
 import java.net.SocketTimeoutException;
 import java.nio.charset.StandardCharsets;
+import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -20,8 +21,8 @@ import java.util.Enumeration;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-import java.sql.*;
 import javax.swing.*;
+
 
 public class Client extends JFrame {
     private static final int CHAT_PORT = 8888;
